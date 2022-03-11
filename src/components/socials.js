@@ -11,7 +11,12 @@ const SocialIcons = () => {
           <path d="M256 352c-16.53 0-33.06-5.422-47.16-16.41L0 173.2V400C0 426.5 21.49 448 48 448h416c26.51 0 48-21.49 48-48V173.2l-208.8 162.5C289.1 346.6 272.5 352 256 352zM16.29 145.3l212.2 165.1c16.19 12.6 38.87 12.6 55.06 0l212.2-165.1C505.1 137.3 512 125 512 112C512 85.49 490.5 64 464 64h-416C21.49 64 0 85.49 0 112C0 125 6.01 137.3 16.29 145.3z" />
         </svg>
       </a>
-      <a href="#" className="socialLink">
+      <a
+        href="https://github.com/TChoy04"
+        className="socialLink"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <svg
           className="socialIcon"
           xmlns="http://www.w3.org/2000/svg"
@@ -34,7 +39,11 @@ const SocialIcons = () => {
           <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
         </svg>
       </a>
-      <a href="#">
+      <a
+        href="https://www.instagram.com/randomlettershfhsksjvdja/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <svg
           className="socialIcon"
           xmlns="http://www.w3.org/2000/svg"
