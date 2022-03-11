@@ -1,4 +1,5 @@
 import "./AboutMe.css";
+import resume from "./docs/Resume.pdf";
 const AboutMe = () => {
   return (
     <div className="aboutMe">
@@ -15,8 +16,9 @@ const AboutMe = () => {
         </p>
         <a
           className="resume hover-link"
-          href="./docs/Tszfai_Choy_Resume.pdf"
+          href={resume}
           target="_blank"
+          type="application/pdf"
           rel="noopener noreferrer"
         >
           Resume Link
