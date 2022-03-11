@@ -1,6 +1,6 @@
 import "./header.css";
 import SocialIcons from "./socials.js";
-
+import AboutMe from "./AboutMe.js";
 const MyHeader = () => {
   return (
     <header>
@@ -14,6 +14,7 @@ const MyHeader = () => {
         <h3>Full-Stack Developer</h3>
         <SocialIcons></SocialIcons>
       </div>
+    <AboutMe/>
     </header>
   );
 };
