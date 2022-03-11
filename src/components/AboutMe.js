@@ -13,7 +13,7 @@ const AboutMe = () => {
           If you would like to get in contact with me, my social links are right
           above and you can expect a response within 24 hours.
         </p>
-        <a className="resume hover-link" href="#">
+        <a className="resume hover-link" href="./docs/Tszfai_Choy_Resume">
           Resume Link
         </a>
       </div>
