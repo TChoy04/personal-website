@@ -15,7 +15,7 @@ const AboutMe = () => {
         </p>
         <a
           className="resume hover-link"
-          href="./docs/Tszfai_Choy_Resume"
+          href="./docs/Tszfai_Choy_Resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
         >
