@@ -1,0 +1,11 @@
+.experiences {
+  padding-top: 0.75rem;
+  line-height: 1.2rem;
+}
+.experience-title {
+  font-size: 1.025rem;
+}
+.experience-role {
+  color: #44b3cc;
+  font-weight: bold;
+}

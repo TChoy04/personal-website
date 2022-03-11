@@ -1,0 +1,28 @@
+#displayedImage {
+  border-radius: 50%;
+  width: 300px;
+  max-width: 100%;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  padding-block: 10%;
+  align-items: center;
+  font-family: "Wire One", sans-serif;
+}
+.myInfo {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.myInfo > h1,
+.myInfo > h3,
+.myInfo > .socials {
+  padding-block: 0.25rem;
+}
+.myInfo > h1 {
+  font-size: 4.5rem;
+}
+.myInfo > h3 {
+  font-size: 2rem;
+}
