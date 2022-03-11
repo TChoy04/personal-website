@@ -1,6 +1,5 @@
 import MyHeader from "./components/header.js";
 import "./App.css";
-import AboutMe from "./components/AboutMe.js";
 import Projects from "./components/Projects.js";
 import finx from "./components/images/finx.png";
 import isl from "./components/images/isl.png";
@@ -9,7 +8,6 @@ function App() {
   return (
     <div className="wrapper">
       <MyHeader />
-      <AboutMe />
       <div className="project-container">
         <div className="project-header">
           <h1 className="project-heading">—Projects</h1>
