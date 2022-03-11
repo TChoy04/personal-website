@@ -1,5 +1,6 @@
 import "./AboutMe.css";
 import resume from "./docs/Resume.pdf";
+const discord = ">~<#9034";
 const AboutMe = () => {
   return (
     <div className="aboutMe">
@@ -11,8 +12,9 @@ const AboutMe = () => {
           appealing websites with a mobile first approach.
         </p>
         <p>
-          If you would like to get in contact with me, my social links are right
-          above and you can expect a response within 24 hours.
+          If you would like to get in contact with me, you can contact me via
+          email at <strong>tszfai04@gmail.com</strong> or direct messages on
+          <strong> LinkedIn</strong> or <strong>Discord ({discord})</strong>
         </p>
         <a
           className="resume hover-link"
