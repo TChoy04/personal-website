@@ -11,7 +11,7 @@ const MyHeader = () => {
       ></img>
       <div className="myInfo">
         <h1>Tszfai Choy</h1>
-        <h3>Front-End Developer</h3>
+        <h3>Full-Stack Developer</h3>
         <SocialIcons></SocialIcons>
       </div>
     </header>
