@@ -80,23 +80,14 @@ body {
   background-color: #79c5df;
   height: 100%;
 }
-@media (min-width: 640px){
-
-
+@media (min-width: 640px) {
 }
 
-@media (min-width: 768px){
-
-
+@media (min-width: 768px) {
 }
 
-@media (min-width: 1024px){
-
-
+@media (min-width: 1024px) {
 }
 
-@media (min-width: 1200px){
-
-
-
+@media (min-width: 1200px) {
 }
