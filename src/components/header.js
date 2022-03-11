@@ -4,6 +4,7 @@ import AboutMe from "./AboutMe.js";
 const MyHeader = () => {
   return (
     <header>
+    <div className="image-socials">
       <img
         id="displayedImage"
         src="https://dummyimage.com/300.png/09f/fff"
@@ -14,6 +15,7 @@ const MyHeader = () => {
         <h3>Full-Stack Developer</h3>
         <SocialIcons></SocialIcons>
       </div>
+</div>
     <AboutMe/>
     </header>
   );
