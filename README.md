@@ -1,3 +1,4 @@
 # portfolio
  My personal website.
- REVERT CHANGES LATER
+ 
+Pausing development.
