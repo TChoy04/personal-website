@@ -10,7 +10,9 @@ function App() {
       <MyHeader />
       <div className="project-container">
         <div className="project-header">
-          <h1 className="project-heading">—Projects</h1>
+          <h1 className="project-heading">
+            <span className="mobile-vanish">—</span>Projects
+          </h1>
           <strong className="project-heading-description">
             Showcase of websites I have worked on.
           </strong>
@@ -34,9 +36,11 @@ function App() {
       </div>
       <div className="experience-container">
         <div className="experience-header">
-          <h1 className="experience-heading">—Experience</h1>
+          <h1 className="experience-heading">
+            <span className="mobile-vanish">—</span>Experience
+          </h1>
           <strong className="experience-heading-description">
-            Relevant Experience
+            Organizations I've worked with.
           </strong>
         </div>
         <Experiences

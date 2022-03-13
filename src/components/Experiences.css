@@ -2,10 +2,21 @@
   padding-top: 0.75rem;
   line-height: 1.2rem;
 }
+.experience-heading {
+  font-style: italic;
+  font-size: 2.5em;
+  padding-bottom: 0.5rem;
+}
 .experience-title {
-  font-size: 1.025rem;
+  font-size: 1.25rem;
 }
 .experience-role {
   color: #44b3cc;
   font-weight: bold;
+  font-size: 1rem;
+  padding: 0.15rem 0;
+}
+.experience-date {
+  font-size: 1rem;
+  padding: 0.45rem 0;
 }

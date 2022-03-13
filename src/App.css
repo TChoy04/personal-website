@@ -26,6 +26,9 @@ body {
   width: 80%;
   margin: auto;
 }
+.mobile-vanish {
+  display: none;
+}
 .project-container,
 .experience-container {
   font-family: "Raleway", "sans-serif";
@@ -63,9 +66,6 @@ body {
 .hover-link:hover:before {
   transform: scale(1);
 }
-.experience-heading-description {
-  color: #272626;
-}
 .hover-cover {
   position: relative;
   text-decoration: none;
@@ -97,6 +97,12 @@ body {
   .wrapper {
     width: 75%;
   }
+  .mobile-vanish {
+    display: initial;
+  }
+  .experience-heading-description {
+    padding-left: 2.5rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -112,6 +118,7 @@ body {
   .wrapper {
     width: 60%;
   }
+
   .image-socials {
     display: flex;
     flex-direction: row-reverse;
