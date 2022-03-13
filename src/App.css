@@ -10,8 +10,17 @@ html {
 *:after {
   box-sizing: inherit;
 }
+*::-moz-selection {
+  background: #9cedff77;
+  color: #efefef;
+}
+
+*::selection {
+  background: #9cedff77;
+}
 body {
   background: #efefef;
+  letter-spacing: 0.05em;
 }
 .wrapper {
   width: 80%;
@@ -97,12 +106,27 @@ body {
 }
 
 @media (min-width: 1200px) {
+  .wrapper {
+    width: 55%;
+  }
   .image-socials {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     align-items: center;
+    justify-content: space-between;
+    margin: auto;
   }
   header {
-    align-items: baseline;
+    align-items: unset;
+  }
+  .myInfo {
+    text-align: unset;
+  }
+  .socials {
+    margin: unset;
+    justify-content: unset;
+  }
+  .socialLink {
+    margin-right: 10%;
   }
 }

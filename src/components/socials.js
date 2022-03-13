@@ -34,6 +34,7 @@ const SocialIcons = () => {
         href="https://www.instagram.com/randomlettershfhsksjvdja/"
         target="_blank"
         rel="noopener noreferrer"
+        className="socialLink"
       >
         <svg
           className="socialIcon"
