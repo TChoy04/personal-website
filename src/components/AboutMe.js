@@ -10,7 +10,8 @@ const AboutMe = () => {
           I strive to create websites with responsive and intuitive UX/UI and I
           have a serious passion for developing easy to access and visually
           appealing websites with a mobile first approach. I aim to create
-          sturdy and scalable webpages supported by an efficient backend system.
+          sturdy and scalable webpages supported by an efficient backend system
+          using the MERN Stack.
         </p>
         <p>
           If you would like to get in contact with me, you can contact me via
