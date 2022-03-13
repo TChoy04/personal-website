@@ -25,6 +25,7 @@ function App() {
           description="The International Socioeconomics Laboratory is a non-profit 501(c) organization which serves as a student enrichment non-profit that bridges the gap between young students and post-graduate researchers, serving as an output of research in the overlooked field of socioeconomics. As a member of the web development Board of Directors, I served an integral role in the development of various parts of the website, such as the navigation bar and 8+ pages in order to get the site up and running.
 "
           direction="row"
+          link="https://socioeconlabs.org"
         />
         <Projects
           id="finx-image"
@@ -32,6 +33,7 @@ function App() {
           name="Finxerunt Policy Institute"
           description="The Finxerunt Policy Institute is an international organization founded on the basis of building a sustainable future. They colloborate with a diverse set of legislators and scholars and since it's founding, have passed numerous bills in policy. In order to contribute to the effort, I created 5+ fully responsive pages, bringing them one step closer to their goal."
           direction="row-reverse"
+          link="https://finxerunt.org"
         />
       </div>
       <div className="experience-container">

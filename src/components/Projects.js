@@ -5,7 +5,7 @@ const Projects = (item) => {
     <div className={item.direction + " projects"}>
       <div className="project-text">
         <h4 className="project-title">
-          <a href="#" className="hover-cover">
+          <a href={item.link} className="hover-cover">
             {item.name}
           </a>
         </h4>
