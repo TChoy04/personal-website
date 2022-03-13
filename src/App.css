@@ -102,4 +102,7 @@ body {
     flex-direction: row;
     align-items: center;
   }
+  header {
+    align-items: baseline;
+  }
 }
