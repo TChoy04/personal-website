@@ -14,8 +14,8 @@ const AboutMe = () => {
           using the MERN Stack.
         </p>
         <p>
-          If you would like to get in contact with me, you can contact me via
-          email at <strong>tszfai04@gmail.com</strong> or direct messages on
+          If you would like to get in contact with me, you can do so via email
+          at <strong>tszfai04@gmail.com</strong> or direct messages on
           <strong> LinkedIn</strong> or <strong>Discord ({discord})</strong>
         </p>
         <a
