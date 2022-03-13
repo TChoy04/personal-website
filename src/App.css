@@ -80,14 +80,26 @@ body {
   background-color: #79c5df;
   height: 100%;
 }
-@media (min-width: 640px) {
-}
 
 @media (min-width: 768px) {
+  .wrapper {
+    width: 75%;
+  }
 }
 
 @media (min-width: 1024px) {
+  .wrapper {
+    width: 70%;
+  }
+  .header {
+    padding-block: 5%;
+  }
 }
 
 @media (min-width: 1200px) {
+  .image-socials {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
 }
