@@ -39,6 +39,9 @@ body {
   font-size: 0.95rem;
   text-align: center;
 }
+.project-image {
+  border-radius: 5%;
+}
 .hover-link {
   text-decoration: none;
   border-bottom: 3px solid #ff3b3f;
@@ -107,20 +110,26 @@ body {
 
 @media (min-width: 1200px) {
   .wrapper {
-    width: 55%;
+    width: 60%;
   }
   .image-socials {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    justify-content: space-between;
-    margin: auto;
+    justify-content: center;
   }
   header {
+    padding-block: 5%;
     align-items: unset;
   }
   .myInfo {
     text-align: unset;
+  }
+  .myInfo > h1 {
+    letter-spacing: 0.35rem;
+  }
+  #displayedImage {
+    padding: 0 5%;
   }
   .socials {
     margin: unset;
@@ -128,5 +137,28 @@ body {
   }
   .socialLink {
     margin-right: 10%;
+  }
+  .aboutMe p {
+    margin-bottom: 3%;
+  }
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+  .row > .project-image {
+    padding-left: 4%;
+  }
+  .row-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .row-reverse > .project-image {
+    padding-right: 4%;
+  }
+  .project-image {
+    max-width: 40% !important;
+  }
+  .projects {
+    padding-bottom: 2rem;
   }
 }
