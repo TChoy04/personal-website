@@ -86,7 +86,7 @@ body {
   transition: all ease 0.15s;
 }
 .hover-cover:hover {
-  color: white;
+  color: #efefef;
 }
 .hover-cover:hover::after {
   background-color: #79c5df;
