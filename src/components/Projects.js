@@ -16,6 +16,7 @@ const Projects = (item) => {
         </h4>
         <p className="project-description">{item.description}</p>
       </div>
+
       <img className="project-image" src={item.source} alt={item.id}></img>
     </div>
   );
