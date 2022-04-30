@@ -5,12 +5,10 @@ const ProjectContainer = () => {
   return (
     <div className="project-container">
       <div className="project-header">
-        <h1 className="project-heading">
-          <span className="mobile-vanish">—</span>Projects
-        </h1>
-        <strong className="project-heading-description">
+        <h1 className="project-heading">Projects</h1>
+        <h4 className="project-heading-description">
           Showcase of websites I have worked on.
-        </strong>
+        </h4>
       </div>
 
       <Projects
