@@ -13,7 +13,7 @@ const MyHeader = () => {
 
         <div className="myInfo">
           <h1>Tszfai Choy</h1>
-          <h3>Full-Stack Developer</h3>
+          <h3>Software Engineer</h3>
           <SocialIcons></SocialIcons>
         </div>
       </div>
