@@ -1,6 +1,5 @@
 import "./AboutMe.css";
 import resume from "./docs/Tszfai_Choy_Resume_Updated_4_28_2022.pdf";
-const discord = "BLANKFORNOW";
 const AboutMe = () => {
   return (
     <div className="aboutMe">
@@ -14,8 +13,7 @@ const AboutMe = () => {
         </p>
         <p>
           If you would like to get in contact with me, you can do so via email
-          at <strong>tszfai04@gmail.com</strong> or direct messages on
-          <strong> LinkedIn</strong> or <strong>Discord ({discord})</strong>
+          at <strong>tszfai04@gmail.com</strong> or direct messages on any of my socials listed above.
         </p>
         <a
           className="resume hover-link"
