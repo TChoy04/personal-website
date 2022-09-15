@@ -1,14 +1,14 @@
-import MyHeader from "./components/MyHeader.js";
 import "./App.css";
-import ProjectContainer from "./components/ProjectContainer.js";
-import ExperienceContainer from "./components/ExperienceContainer.js"
+import {BrowserRouter as  Router, Routes, Route} from "react-router-dom";
+import Main from "./main.js";
 function App() {
   return (
-    <div className="wrapper">
-      <MyHeader />
-  <ProjectContainer/>
-<ExperienceContainer/>
-    </div>
+<Router>
+  <Routes>
+    <Route path="/" element={<Main></Main>}></Route>
+    <Route path="/js30">  </Route>
+  </Routes>
+</Router>
   );
 }
 
