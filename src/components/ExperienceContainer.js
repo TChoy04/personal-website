@@ -4,13 +4,13 @@ const ExperienceContainer = () => {
     <div className="experience-container">
       <div className="experience-header">
         <h1 className="experience-heading">
-          <span className="mobile-vanish">—</span>Experience
+        Experience
         </h1>
-        <strong className="experience-heading-description">
+        <p className="experience-heading-description">
           Organizations I've worked with.
-        </strong>
+        </p>
       </div>
-      <div>
+      <div className="flex-divider">
         <div className="split-exp">
           <Experiences
             title="International Socioeconomics Laboratory"

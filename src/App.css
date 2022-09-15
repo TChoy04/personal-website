@@ -95,19 +95,16 @@ body {
 
 @media (min-width: 768px) {
   .wrapper {
-    width: 75%;
+    width: 85%;
   }
   .mobile-vanish {
     display: initial;
-  }
-  .experience-heading-description {
-    padding-left: 2.5rem;
   }
 }
 
 @media (min-width: 1024px) {
   .wrapper {
-    width: 70%;
+    width: 85%;
   }
   .header {
     padding-block: 5%;
@@ -115,9 +112,7 @@ body {
 }
 
 @media (min-width: 1200px) {
-  .wrapper {
-    width: 65%;
-  }
+
 
   .image-socials {
     display: flex;
@@ -168,4 +163,9 @@ body {
   .projects {
     padding-bottom: 4rem;
   }
+}
+@media (min-width: 1400px){
+.wrapper{
+  width:70%;
+}
 }
