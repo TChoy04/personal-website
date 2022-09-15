@@ -1,6 +1,7 @@
 import "./MyHeader.css";
 import SocialIcons from "./socials.js";
 import AboutMe from "./AboutMe.js";
+import "../App.css"
 const MyHeader = () => {
   return (
     <header>

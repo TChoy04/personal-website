@@ -6,10 +6,10 @@
     display:grid;
     place-items:center;
 }
-a{
+.error-link{
     font-size:2rem;
     transition:all 0.5s;
 }
-a:hover{
+.error-link:hover{
     opacity:0.6;
 }

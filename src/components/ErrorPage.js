@@ -8,7 +8,7 @@ return <div class="error">
     </h1>
     
 
-    <a href=".."> Homepage </a>
+    <a href=".." class="error-link"> Homepage </a>
 
 </div>
 }
