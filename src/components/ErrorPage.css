@@ -1,0 +1,15 @@
+.error{
+    height:100vh;
+    width:100vw;
+}
+.error{
+    display:grid;
+    place-items:center;
+}
+.error-link{
+    font-size:2rem;
+    transition:all 0.5s;
+}
+.error-link:hover{
+    opacity:0.6;
+}
