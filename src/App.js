@@ -1,12 +1,14 @@
 import {BrowserRouter as  Router, Routes, Route} from "react-router-dom";
-import Main from "./components/main.js";
+import Main from "./components/main.js";  
 import "./App.css";
+import Planner from  "./planner/Planner"
 function App() {
   return (
 <Router>
   <Routes>
     <Route path="/" element={<Main></Main>}></Route>
     <Route path="/js30"> </Route>
+    <Route path ="planner" element={<Planner></Planner>}></Route>
   </Routes>
 </Router>
   );
