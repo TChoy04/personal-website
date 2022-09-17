@@ -7,9 +7,15 @@
     "@testing-library/react": "^12.1.3",
     "@testing-library/user-event": "^13.5.0",
     "animate.css": "^4.1.1",
+    "bcryptjs": "^2.4.3",
     "chalk": "^5.0.1",
+    "dotenv": "^16.0.2",
     "each-async": "^2.0.0",
+    "express": "^4.18.1",
+    "express-async-handler": "^1.2.0",
     "indent-string": "^5.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.6.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-router-dom": "^6.4.0",
@@ -20,7 +26,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "server": "node src/planner/components/server.js",
+    "nodemon": "nodemon src/planner/components/server.js"
   },
   "eslintConfig": {
     "extends": [
@@ -41,6 +49,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^3.2.3"
+    "gh-pages": "^3.2.3",
+    "nodemon": "^2.0.19"
   }
 }
