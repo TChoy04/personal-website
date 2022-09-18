@@ -16,13 +16,13 @@ function Header() {
 
             </li>
             <li>
-            <Link to="Login">
+            <Link to="/login">
             <FaSignInAlt></FaSignInAlt>
                     <p>Login</p>
                 </Link>
             </li>
             <li>
-                <Link to="planner">
+                <Link to="/planner">
                     <FaHome></FaHome>
                     Home
                 </Link>
