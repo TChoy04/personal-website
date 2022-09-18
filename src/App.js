@@ -1,7 +1,9 @@
 import {BrowserRouter as  Router, Routes, Route} from "react-router-dom";
 import Main from "./components/main.js";  
 import "./App.css";
-import Planner from  "./planner/Planner"
+import Dashboard from  "./plannerFrontend/pages/Dashboard"
+import Register from "./plannerFrontend/pages/Register"
+import Login from "./plannerFrontend/pages/Login"
 import ErrorPage from "./components/ErrorPage.js"
 function App() {
   return (
@@ -9,7 +11,9 @@ function App() {
   <Routes>
     <Route path="/x" element={<Main></Main>}></Route>
     <Route path="/js30"> </Route>
-    <Route path ="/" element={<Planner></Planner>}></Route>
+    <Route path ="/" element={<Dashboard></Dashboard>}></Route>
+    <Route path ="/register" element={<Register></Register>}></Route>
+    <Route path ="/login" element={<Login></Login>}></Route>
     <Route path="*" element={<ErrorPage></ErrorPage>}></Route>
   </Routes>
 </Router>
