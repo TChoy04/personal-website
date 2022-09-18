@@ -1,6 +1,13 @@
 import Header from "../components/Header"
 import {useState,useEffect} from "react"
+import {useSelector, useDispatch} from "react-redux"
+import { useNavigate } from "react-router-dom"
+import { toast } from "react-toastify"
+import { ToastContainer } from "react-toastify"
+//import "react-toastify/dist/ReactToastify.css";
 import {FaUser} from "react-icons/fa"
+import {register,reset} from "../features/auth/authSlice.js"
+import Spinner from "../components/Spinner"
 function Register() {
   const [formData,setFormData] = useState({
     name:"",
@@ -9,6 +16,19 @@ function Register() {
     confirmPassword:"",
   });
   const {name,email,password,confirmPassword} = formData;
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
+  const {user,isLoading,isError,isSuccess,message} = useSelector((state)=>state.auth);
+  useEffect(()=>{
+    if(isError) {
+      toast.error(message)
+    }
+    if(isSuccess || user){
+      navigate('/');
+    }
+    dispatch(reset());
+
+  },[user,isError,isLoading,isSuccess,navigate,dispatch,message])
   const onChange = (e) =>{
       setFormData((prevState)=>({
         ...prevState, [e.target.name] : e.target.value,
@@ -17,11 +37,19 @@ function Register() {
 
   const onSubmit = (e)=>{
     e.preventDefault();
+    if(password!==confirmPassword){
+      toast.error("Passwords do not match.");
+    }else{
+      const userData = {name,email,password};
+      dispatch(register(userData));
+    }
+  }
+  if(isLoading){
+    return <Spinner></Spinner>
   }
   return (
     <>
       <Header></Header>
-      
       <section className="heading">
         <h1 className="reg-black">
           <FaUser></FaUser> Register
@@ -45,6 +73,7 @@ function Register() {
           <button type="submit" className="btn-block btn-flip" data-back="Submit"data-front="Submit"></button>
         </div>
         </form></section>
+        <ToastContainer></ToastContainer>
       </>
   )
 }
