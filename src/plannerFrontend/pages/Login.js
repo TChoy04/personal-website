@@ -3,12 +3,11 @@ import {useState,useEffect} from "react"
 import {FaSignInAlt} from "react-icons/fa"
 function Login() {
   const [formData,setFormData] = useState({
-    name:"",
+
     email:"",
     password:"",
-    confirmPassword:"",
   });
-  const {name,email,password,confirmPassword} = formData;
+  const {email,password} = formData;
   const onChange = (e) =>{
       setFormData((prevState)=>({
         ...prevState, [e.target.name] : e.target.value,
@@ -24,23 +23,18 @@ function Login() {
       
       <section className="heading">
         <h1 className="reg-black">
-          <FaSignInAlt></FaSignInAlt> Login
+          <FaSignInAlt></FaSignInAlt><span>Login</span>
         </h1>
-        <p>Please create an account.</p>
+        <p>Welcome back!</p>
       </section>
       <section className="form"><form>
-        <div className="form-group">
-        <input type ="text" className="form-control" id="name" value={name} placeholder="Please enter your name" onChange={onChange}></input>
-        </div>
         <div className="form-group">
         <input type ="text" className="form-control" id="email" value={email} placeholder="Please enter your email" onChange={onChange}></input>
         </div>
         <div className="form-group">
         <input type ="password" className="form-control" id="password" value={password} placeholder="Please enter your password" onChange={onChange}></input>
         </div>
-        <div className="form-group">
-        <input type ="password" className="form-control" id="confirmPassword" value={confirmPassword} placeholder="Confirm password." onChange={onChange}></input>
-        </div>
+
         <div className="form-group">
           <button type="submit" className="btn-block btn-flip" data-back="Submit"data-front="Submit"></button>
         </div>

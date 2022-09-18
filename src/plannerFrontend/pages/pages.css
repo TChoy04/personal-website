@@ -28,8 +28,14 @@ h3 {
   font-weight: 600;
   margin-bottom: 5px;
 }
-.reg-black, .reg-black svg path{
+.reg-black, .reg-black svg path, .reg-black span{
   color:black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.reg-black span{
+  padding-left:1%
 }
 .container {
   width: 100%;
