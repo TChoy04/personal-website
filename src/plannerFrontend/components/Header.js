@@ -1,4 +1,4 @@
-import {FaHome, FaSignInAlt, FaSignOutAlt, FaUser} from "react-icons/fa";
+import {FaHome, FaSignInAlt, FaSignOutAlt, FaUser, FaClipboardList} from "react-icons/fa";
 import {Link, useNavigate} from "react-router-dom";
 import "../../App.css"
 import { useSelector,useDispatch } from "react-redux";
@@ -43,8 +43,8 @@ function Header() {
             }
             <li>
                 <Link to="/planner">
-                    <FaHome></FaHome>
-                    Home
+                    <FaClipboardList></FaClipboardList>
+                    Planner
                 </Link>
             </li>
         </ul>
