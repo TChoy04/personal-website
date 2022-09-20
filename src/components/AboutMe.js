@@ -22,7 +22,9 @@ const AboutMe = () => {
         >
           Resume Link
         </a>
+        <a href="/register">Go</a>
       </div>
+      
     </div>
   );
 };
