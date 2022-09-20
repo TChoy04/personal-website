@@ -11,6 +11,7 @@
     "axios": "^0.27.2",
     "bcryptjs": "^2.4.3",
     "chalk": "^5.0.1",
+    "concurrently": "^7.4.0",
     "each-async": "^2.0.0",
     "indent-string": "^5.0.0",
     "react": "^17.0.2",
@@ -23,13 +24,15 @@
     "redux": "^4.2.0",
     "web-vitals": "^2.1.4"
   },
+
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server": "node src/planner/components/server.js",
-    "nodemon": "nodemon src/planner/components/server.js"
+    "server": "node backend/server.js",
+    "nodemon": "nodemon backend/server.js",
+    "concurrent": "concurrently \"npm run nodemon\" \"npm run start\""
   },
   "eslintConfig": {
     "extends": [
