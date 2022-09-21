@@ -5,9 +5,7 @@ const AboutMe = () => {
     <div className="aboutMe">
       <div className="description">
         <p>
-          My name is Tszfai and I strive to create websites with responsive and
-          intuitive UX/UI and I have a serious passion for developing easy to
-          access and visually appealing websites with a mobile first approach.
+          My name is Tszfai and I am currently specializing in web based technologies like React.js and am excited to learn about fields outside of web development. I am seeking opportunities to further build upon my abilities and to expand my skill set. 
         </p>
         <p>
           If you would like to get in contact with me, you can do so via email
