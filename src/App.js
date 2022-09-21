@@ -1,20 +1,33 @@
 import {BrowserRouter as  Router, Routes, Route} from "react-router-dom";
 import Main from "./components/main.js";  
 import "./App.css";
-import Dashboard from  "./plannerFrontend/pages/Dashboard"
-import Register from "./plannerFrontend/pages/Register"
-import Login from "./plannerFrontend/pages/Login"
 import ErrorPage from "./components/ErrorPage.js"
+import CryptoMain from "./crypto_tracker/CryptoMain.js";
+import CoinPage from "./crypto_tracker/components/CoinPage.js";
+import {useState,useEffect} from "react"
+import axios from "axios"
 function App() {
+  const [coins, setCoins] = useState([])
+
+  const url = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=50&page=1&sparkline=false'
+
+  useEffect(() => {
+    axios.get(url).then((response) => {
+      setCoins(response.data)
+    }).catch((error) => {
+      console.log(error)
+    })
+  }, [])
+
   return (
 <Router>
   <Routes>
     <Route path="/" element={<Main></Main>}></Route>
     <Route path="/js30"> </Route>
-    <Route path ="/planner" element={<Dashboard></Dashboard>}></Route>
-    <Route path ="/register" element={<Register></Register>}></Route>
-    <Route path ="/login" element={<Login></Login>}></Route>
-    <Route path="*" element={<ErrorPage></ErrorPage>}></Route>
+    <Route path="/crypton" element={<CryptoMain></CryptoMain>}></Route>
+    <Route path="" element={<ErrorPage></ErrorPage>}></Route>
+    <Route path='/crypton/coin' element={<CoinPage />}/>
+    <Route path='/crypton/coin/:coinId' element={<CoinPage />} />
   </Routes>
 </Router>
   );

@@ -1,0 +1,136 @@
+.coin-container .content {
+    max-width: 740px;
+    margin: 1rem auto;
+    padding: .7rem 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #efefef;
+    box-shadow: 0px 0px 12px #18191b38;
+    border-radius: 8px;
+}
+
+.rank {
+    margin: .5 0;
+}
+.content p, 
+.content a, 
+.content h4,
+.content th,
+.content h1,
+.content span
+{
+    color:black;
+}
+.content a{
+    text-decoration: none;
+    font-weight:bold;
+    transition: all 0.5s ease;
+}
+.content a:hover{
+    opacity: 0.6;
+}
+.rank-btn {
+    border: 1px solid #ff9900;
+    box-shadow: 0px 0px 8px #ff9900;
+    background-color: #ff9900;
+    border-radius: 8px;
+    padding: .2rem;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.info .coin-heading {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.info .coin-price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info p {
+    padding-right: 1rem;
+    padding-left:1rem;
+}
+
+table {
+    margin: .5rem 0;
+}
+
+td, th {
+    padding: 8px;
+    text-align: center;
+}
+th,tr{
+    border:black solid 2px
+}
+
+.top-display{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.align{
+    display:flex;
+    align-items: center;
+}
+.stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    width: 100%;
+}
+
+.stats .row {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #808080;
+    margin: .6rem 0;
+    padding-bottom: .5rem;
+}
+
+.stats .row p:first-child {
+    color: #d3d3d3;
+}
+
+.about h3 {
+    margin: 1rem 0;
+}
+
+@media screen and (max-width: 700px) {
+    .coin-container .content {
+        max-width: 100%;
+        margin: .5rem;
+        padding: 0 .5rem;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    td,th {
+        padding: 3px;
+    }
+
+    .rank {
+        margin: .5rem;
+    }
+
+    .rank-btn {
+        margin: .5rem 0;
+    }
+}
+
+
+
+
+
+
+
+

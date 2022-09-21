@@ -1,0 +1,37 @@
+.coin-row{
+    display:flex;
+    justify-content: space-between;
+    width:85%;
+    align-items: center;
+    background-color: #efefef;
+    box-shadow: 0px 0px 12px #18191b1a;
+    border-radius: 8px;
+    margin: 2rem auto;
+    padding: .7rem 1rem;
+    transition: all 0.4s ease;
+}
+.coin-wrapper{
+    margin:auto;
+}
+.hover-effect:hover{
+    transform: scale(1.04);
+    box-shadow: 0px 0px 12px #18191b70;
+    cursor: pointer;
+}
+.coin-row *{
+width:14%;
+}
+.coin-logo{
+    text-align: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.coin-logo span{
+    margin-left:0.5rem;
+}
+@media screen and (max-width: 720px) {
+    .hide-mobile {
+        display: none;
+    }
+}

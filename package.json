@@ -10,6 +10,7 @@
     "animate.css": "^4.1.1",
     "axios": "^0.27.2",
     "chalk": "^5.0.1",
+    "dompurify": "^2.4.0",
     "each-async": "^2.0.0",
     "indent-string": "^5.0.0",
     "react": "^17.0.2",

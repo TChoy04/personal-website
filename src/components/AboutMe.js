@@ -1,5 +1,5 @@
 import "./AboutMe.css";
-import resume from "./docs/Tszfai_Choy_Resume_Updated_4_28_2022.pdf";
+import resume from "./docs/Tszfai_Choy_Resume.pdf";
 const AboutMe = () => {
   return (
     <div className="aboutMe">

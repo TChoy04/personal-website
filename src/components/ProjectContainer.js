@@ -36,7 +36,7 @@ const ProjectContainer = () => {
         id="finx-image"
         source={crypton}
         name="Planet Crypton"
-        description="Planet Crypton: A side project I created in order to keep track of the ever volatile cryptocurrency market. It currently tracks the top 100 cryptocurrencies, ranked by their market cap."
+        description="Planet Crypton: A side project I created in order to keep track of the ever volatile cryptocurrency market. It currently tracks the top 250 cryptocurrencies, ranked by their market cap."
         description2="Planet Crypton updates real time with important information, such as a cryptocurrency's change over time, its highs and lows within 24 hours and a summary informing the user about the cryptocurrency, allowing the user to more confidently invest."
         direction="row"
         link="./crypton"
