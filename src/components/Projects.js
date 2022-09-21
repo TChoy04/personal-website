@@ -7,7 +7,7 @@ const Projects = (item) => {
         <h4 className="project-title">
           <a
             href={item.link}
-            target="_blank"
+            target={item.target}
             rel="noopener noreferrer"
             className="hover-cover"
           >

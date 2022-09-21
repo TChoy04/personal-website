@@ -1,6 +1,7 @@
 import Projects from "./Projects.js";
 import finx from "./images/finx.png";
 import isl from "./images/isl.png";
+import crypton from "./images/crypton.png"
 const ProjectContainer = () => {
   return (
     <div className="project-container">
@@ -19,6 +20,7 @@ const ProjectContainer = () => {
         description2="As a member of the web development Board of Directors, I served an integral role in the development of various parts of the website, such as the navigation bar and 8+ pages in order to get the site up and running."
         direction="row"
         link="https://socioeconlabs.org"
+        target="_blank"
       />
       <Projects
         id="finx-image"
@@ -28,6 +30,17 @@ const ProjectContainer = () => {
         description2="In order to contribute to the effort, I created 5+ fully responsive pages, bringing them one step closer to their goal."
         direction="row-reverse"
         link="https://finxerunt.org"
+        target="_blank"
+      />
+          <Projects
+        id="finx-image"
+        source={crypton}
+        name="Planet Crypton"
+        description="Planet Crypton: A side project I created in order to keep track of the ever volatile cryptocurrency market. It currently tracks the top 100 cryptocurrencies, ranked by their market cap."
+        description2="Planet Crypton updates real time with important information, such as a cryptocurrency's change over time, its highs and lows within 24 hours and a summary informing the user about the cryptocurrency, allowing the user to more confidently invest."
+        direction="row"
+        link="./crypton"
+        target=""
       />
     </div>
   );
