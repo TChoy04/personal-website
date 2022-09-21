@@ -15,19 +15,19 @@ const ExperienceContainer = () => {
           <Experiences
             title="International Socioeconomics Laboratory"
             role="Board of Directors - Web Development"
-            date="March 2020 - Feb 2022"
+            date="June 2020 - February 2022"
           />
           <Experiences
             title="Finxerunt Policy Institute"
             role="Web Developer"
-            date="March 2020 - Feb 2022"
+            date="June 2020 - January 2022"
           />
         </div>
         <div className="split-exp">
           <Experiences
             title="STEM from Scratch"
             role="Writer + Editor"
-            date="March 2021 - Present"
+            date="March 2021 - March 2022"
           />
           <Experiences
             title="Brooklyn Public Library"
