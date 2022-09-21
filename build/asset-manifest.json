@@ -1,16 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.37cbc984.css",
-    "main.js": "/static/js/main.09cc0bc4.js",
+    "main.css": "/static/css/main.b36c578a.css",
+    "main.js": "/static/js/main.c5bf719c.js",
     "static/media/isl.png": "/static/media/isl.f0d6c724717dbe793f74.png",
+    "static/media/Tszfai_Choy_Headshot.jpg": "/static/media/Tszfai_Choy_Headshot.8c02e2d731ac010005d6.jpg",
     "static/media/finx.png": "/static/media/finx.8fcf94cf58d4883ecb12.png",
-    "static/media/Tszfai_Choy_Resume_Updated_4_28_2022.pdf": "/static/media/Tszfai_Choy_Resume_Updated_4_28_2022.526346272d8943e8c7b3.pdf",
+    "static/media/Tszfai_Choy_Resume.pdf": "/static/media/Tszfai_Choy_Resume.80f17f261f37ae13b116.pdf",
+    "static/media/crypton.png": "/static/media/crypton.4ed537cfbf5d8dec4c7f.png",
     "index.html": "/index.html",
-    "main.37cbc984.css.map": "/static/css/main.37cbc984.css.map",
-    "main.09cc0bc4.js.map": "/static/js/main.09cc0bc4.js.map"
+    "main.b36c578a.css.map": "/static/css/main.b36c578a.css.map",
+    "main.c5bf719c.js.map": "/static/js/main.c5bf719c.js.map"
   },
   "entrypoints": [
-    "static/css/main.37cbc984.css",
-    "static/js/main.09cc0bc4.js"
+    "static/css/main.b36c578a.css",
+    "static/js/main.c5bf719c.js"
   ]
 }
