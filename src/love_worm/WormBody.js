@@ -1,6 +1,6 @@
 import React from 'react'
 //Size of squares.
-const multi = 8;
+const multi = 5;
 function WormBody(props) {
   return (
     <div>

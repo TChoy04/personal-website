@@ -7,19 +7,19 @@
 }
 .worm-body{
     position:absolute;
-    width:8%;
-    height:8%;
+    width:5%;
+    height:5%;
     background-color:#CC9966;
     border:1px solid #3d1f00
 }
 .heart {
     background-color: red;
     display: inline-block;
-    height: 30px;
+    height: 18px;
     position: absolute;
     top: 0;
     transform: rotate(-45deg);
-    width: 30px;
+    width: 18px;
   }
   
   .heart:before,
@@ -27,17 +27,17 @@
     content: "";
     background-color: red;
     border-radius: 50%;
-    height: 30px;
+    height: 18px;
     position: absolute;
-    width: 30px;
+    width: 18px;
   }
   
   .heart:before {
-    top: -15px;
+    top: -9px;
     left: 0;
   }
   
   .heart:after {
-    left: 15px;
+    left: 9px;
     top: 0;
   }
