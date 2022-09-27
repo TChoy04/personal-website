@@ -1,0 +1,43 @@
+.board{
+    position:relative;
+    margin:50px auto;
+    width:750px;
+    height:750px;
+    border:2px solid #79c5d6;
+}
+.worm-body{
+    position:absolute;
+    width:8%;
+    height:8%;
+    background-color:#CC9966;
+    border:1px solid #3d1f00
+}
+.heart {
+    background-color: red;
+    display: inline-block;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    transform: rotate(-45deg);
+    width: 30px;
+  }
+  
+  .heart:before,
+  .heart:after {
+    content: "";
+    background-color: red;
+    border-radius: 50%;
+    height: 30px;
+    position: absolute;
+    width: 30px;
+  }
+  
+  .heart:before {
+    top: -15px;
+    left: 0;
+  }
+  
+  .heart:after {
+    left: 15px;
+    top: 0;
+  }
