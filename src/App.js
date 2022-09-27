@@ -6,6 +6,7 @@ import CryptoMain from "./crypto_tracker/CryptoMain.js";
 import CoinPage from "./crypto_tracker/components/CoinPage.js";
 import {useState,useEffect} from "react"
 import axios from "axios"
+import Worm from "./snake_game/Worm.js"
 function App() {
   const [coins, setCoins] = useState([])
 
@@ -25,9 +26,10 @@ function App() {
     <Route path="/" element={<Main></Main>}></Route>
     <Route path="/js30"> </Route>
     <Route path="/crypton" element={<CryptoMain></CryptoMain>}></Route>
-    <Route path="" element={<ErrorPage></ErrorPage>}></Route>
+    <Route path="*" element={<ErrorPage></ErrorPage>}></Route>
     <Route path='/crypton/coin' element={<CoinPage />}/>
     <Route path='/crypton/coin/:coinId' element={<CoinPage />} />
+    <Route path='/snake' element={<Worm></Worm>}></Route>
   </Routes>
 </Router>
   );
