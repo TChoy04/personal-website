@@ -6,7 +6,7 @@ import CryptoMain from "./crypto_tracker/CryptoMain.js";
 import CoinPage from "./crypto_tracker/components/CoinPage.js";
 import {useState,useEffect} from "react"
 import axios from "axios"
-import Worm from "./snake_game/Worm.js"
+import Worm from "./love_worm/Worm.js"
 function App() {
   const [coins, setCoins] = useState([])
 
