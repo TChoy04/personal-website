@@ -1,4 +1,4 @@
-import { render } from '@testing-library/react';
+
 import React,{useEffect, useState} from 'react'
 import "./Board.css"
 import Heart from "./Heart";
@@ -19,52 +19,69 @@ function Board() {
     const [direction,updateDirection] = useState("RIGHT");
     const [heart,updateHeart] = useState(randomHeartGenerator());
     const [wormBody, updateWormBody] = useState([
-        [9,9]
+        [8,10],
+        [9,10]
     ]);
     const onKeyDown = (e) =>{
-        if(e.key=='ArrowLeft' || e.key == "d" || e.key == "D"){
+        if(e.key==='ArrowLeft' || e.key === "d" || e.key === "D"){
             updateDirection("LEFT");
-            moveSnake();
         }
-        else if(e.key=='ArrowRight' || e.key == "a" || e.key == "A"){
+        else if(e.key==='ArrowRight' || e.key === "a" || e.key === "A"){
             updateDirection("RIGHT");
-            moveSnake();
         }
-        else if(e.key=='ArrowUp' || e.key == "w" || e.key == "W"){
+        else if(e.key==='ArrowUp' || e.key === "w" || e.key === "W"){
             updateDirection("UP");
-            moveSnake();
         }
-        else if(e.key=='ArrowDown' || e.key == "s" || e.key == "S"){
+        else if(e.key==='ArrowDown' || e.key === "s" || e.key === "S"){
             updateDirection("DOWN");
-            moveSnake();
         }
         return "";
     }
 
-    const moveSnake = () =>{
+    const moveWorm = () =>{
         let body = [...wormBody];
         let head = body[body.length-1];
-        if(direction=="RIGHT"){
-            head = [head[0]+1,head[1]];
-        }
-        else if(direction=="LEFT"){
+        if(direction==="RIGHT"){
             head = [head[0]-1,head[1]];
         }
-        else if(direction=="DOWN"){
+        else if(direction==="LEFT"){
+            head = [head[0]+1,head[1]];
+        }
+        else if(direction==="DOWN"){
             head = [head[0],head[1]+1];
         }
-        else if(direction=="UP"){
+        else if(direction==="UP"){
             head = [head[0],head[1]-1];
         }
         body.push(head);
         body.shift();
         updateWormBody(body);
     }
+    const onGameOver = () =>{
+        alert("Game over!");
+        updateWormBody([
+            [8,10],
+            [9,10]
+        ]);
+        updateDirection("RIGHT");
+        updateHeart(randomHeartGenerator());
+    }
+    const checkOutOfBounds = ()=>{
+        let head = wormBody[wormBody.length-1];
+        if(head[0]>=20 || head[1]>=20 || head[0]<0 || head[1]<0) onGameOver();
+    }
+
     useEffect(()=>{
-        setInterval(moveSnake,500)
-        window.addEventListener("keydown",onKeyDown);
+        const mv = setInterval(moveWorm,200)
+        checkOutOfBounds();
+        return () => {
+            window.clearInterval(mv);
+          };
+        
     });
-    render();
+    useEffect(()=>{
+        window.addEventListener("keydown",onKeyDown);
+    },[])
   return (
     <div className="board">
         <Worm wormBody={wormBody}></Worm>

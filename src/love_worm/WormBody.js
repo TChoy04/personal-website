@@ -12,10 +12,11 @@ function getRandomColor() {
   }
 
 function WormBody(props) {
+    
   return (
-    <div>
+    <>
         {props.wormBody.map((body,i)=>{
-              let color = getRandomColor()
+            let color= getRandomColor();
             const style = {
                 left:`${body[0]*multi}%`,
                 top:`${body[1]*multi}%`,
@@ -24,7 +25,7 @@ function WormBody(props) {
             return(<div className="worm-body" style={style} key ={i}
             ></div>)
         })}
-    </div>
+    </>
   )
 }
 
