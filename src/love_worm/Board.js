@@ -23,6 +23,7 @@ function Board() {
         [9,10]
     ]);
     const onKeyDown = (e) =>{
+        //Change directions on keydown
         if(e.key==='ArrowLeft' || e.key === "d" || e.key === "D"){
             updateDirection("LEFT");
         }
@@ -41,6 +42,7 @@ function Board() {
     const moveWorm = () =>{
         let body = [...wormBody];
         let head = body[body.length-1];
+        //Check what direction it's going
         if(direction==="RIGHT"){
             head = [head[0]-1,head[1]];
         }
@@ -53,12 +55,14 @@ function Board() {
         else if(direction==="UP"){
             head = [head[0],head[1]-1];
         }
+        //Move the worm
         body.push(head);
         body.shift();
         updateWormBody(body);
     }
     const onGameOver = () =>{
         alert("Game over!");
+        //Set to initial state
         updateWormBody([
             [8,10],
             [9,10]
@@ -70,7 +74,7 @@ function Board() {
         let head = wormBody[wormBody.length-1];
         if(head[0]>=20 || head[1]>=20 || head[0]<0 || head[1]<0) onGameOver();
     }
-
+//Sets interval
     useEffect(()=>{
         const mv = setInterval(moveWorm,200)
         checkOutOfBounds();
