@@ -1,9 +1,10 @@
 
-import { render } from '@testing-library/react';
+
 import React,{useEffect, useState} from 'react'
 import "./Board.css"
 import Heart from "./Heart";
 import Worm from "./WormBody.js"
+import {FaSadTear} from "react-icons/fa"
 //Copied from https://stackoverflow.com/questions/4959975/generate-random-number-between-two-numbers-in-javascript
 function randomIntFromInterval(min, max) { // min and max included 
     return Math.floor(Math.random() * (max - min + 1) + min)
@@ -15,7 +16,8 @@ function randomHeartGenerator(){
 }
 
 let lose = false
-
+let score = 0
+let session_high = 0;
 let dir = "RIGHT"
 function Board() {
     let paused = false;
@@ -90,6 +92,8 @@ function Board() {
     }
     const onGameOver = () =>{
         //Set to initial state
+        score = wormBody.length-2;
+        session_high = Math.max(score,session_high)
         updateWormBody([
             [8,10],
             [9,10]
@@ -165,20 +169,20 @@ function Board() {
         <Heart heart={heart}></Heart>
     </div>
     <div id="loseModal" className={`modal `}>
-        <div className="modal-header">Welcome to Happy Worm!</div>
+        <div className="modal-header"><FaSadTear></FaSadTear> <span class="pad-left">You failed!</span></div>
         <div className="modal-body">
-            <p>You get to play as Bartholomew, The Happy Worm! The consumption of the love is the only thing that makes him happy. The happier Bartholomew is, the longer he gets!</p>
-            <br></br>
-            <p>Enjoy your journey as a carefree worm, searching for happiness whilst unwittingly devoiding the world of love.</p> 
-            <br></br>
-            <p>Controls: WASD or Arrow Keys. Spacebar to Pause/Unpause</p> 
+        <p>You let Bartholomew down!</p>
+        <br></br>
+        <p>Your Score: {score}</p>
+        <br></br>
+        <p>Session High Score: {session_high}</p>        
         </div>
         <button onClick={()=>{
             const loseModal = document.getElementById("loseModal");
             loseModal.classList.remove("active");
             startGame();
             lose = false;
-        }}className="close-button"></button>
+        }}className="close-button lose-button"></button>
     </div>
     </>
   )

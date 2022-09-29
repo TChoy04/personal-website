@@ -15,6 +15,7 @@
 .worm-head{
   border-radius: 40%;
 }
+
 .heart {
     background-color: red;
     display: inline-block;
@@ -43,4 +44,7 @@
   .heart:after {
     left: 9px;
     top: 0;
+  }
+  .pad-left{
+    padding-left:3px;
   }

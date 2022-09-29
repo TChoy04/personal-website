@@ -16,6 +16,8 @@
     border-bottom:1px solid black;
     font-size:1.25rem;
     font-weight:bold;
+    display:flex;
+    align-items: center;
 }
 .close-button{
     cursor:pointer;
@@ -59,7 +61,7 @@
     top: 0;
     left: 0;
     opacity: 1;
-    color: #adadaf;
+    color: #efefef;
     display: block;
     padding: 0 30px;
     line-height: 40px;
@@ -68,6 +70,9 @@
     background-color: #323237;
     content: "Are you ready?";
     transform: translateY(0) rotateX(0);
+  }
+  .lose-button:before{
+    content:"Try again?"
   }
   .modal-body{
     padding:10px 15px;
