@@ -12,8 +12,8 @@
     
     border:1px solid #3d1f00
 }
-.board:first-child{
-  content:"H";
+.worm-head{
+  border-radius: 40%;
 }
 .heart {
     background-color: red;

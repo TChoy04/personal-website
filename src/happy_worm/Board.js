@@ -14,31 +14,55 @@ function randomHeartGenerator(){
     return [x,y]
 }
 
+let lose = false
 
+let dir = "RIGHT"
 function Board() {
+    let paused = false;
     const [direction,updateDirection] = useState("RIGHT");
     const [heart,updateHeart] = useState(randomHeartGenerator());
     const [wormBody, updateWormBody] = useState([
         [8,10],
         [9,10],
     ]);
+
     const [speed,updateSpeed] = useState(1000000)
+    //Start the game || resume after a pause
     const startGame = () =>{
-        updateSpeed(200)
+        updateSpeed(150)
     }
+    //Resume after a lost game to remove Modal
+    //Pause the game
+    const pauseGame = () =>{
+        updateSpeed(1000000);
+    }
+    
+    
     const onKeyDown = (e) =>{
         //Change directions on keydown
-        if(e.key==='ArrowLeft' || e.key === "d" || e.key === "D"){
+        if((e.key==='ArrowLeft' || e.key === "a" || e.key === "A") && dir!="RIGHT"){
             updateDirection("LEFT");
+            dir = "LEFT"
         }
-        else if(e.key==='ArrowRight' || e.key === "a" || e.key === "A"){
+        else if((e.key==='ArrowRight' || e.key === "d" || e.key === "D" ) && dir!="LEFT"){
             updateDirection("RIGHT");
+            dir = "RIGHT"
         }
-        else if(e.key==='ArrowUp' || e.key === "w" || e.key === "W"){
+        else if((e.key==='ArrowUp' || e.key === "w" || e.key === "W") && dir!="DOWN"){
             updateDirection("UP");
+            dir = "UP"
         }
-        else if(e.key==='ArrowDown' || e.key === "s" || e.key === "S"){
+        else if((e.key==='ArrowDown' || e.key === "s" || e.key === "S") && dir!="UP"){
             updateDirection("DOWN");
+            dir = "DOWN"
+        
+        }
+        if(e.code=="Space"){
+            if(paused){
+                startGame()
+            } 
+            else pauseGame()
+            paused = !paused;
         }
         return "";
     }
@@ -48,10 +72,10 @@ function Board() {
         let head = body[body.length-1];
         //Check what direction it's going
         if(direction==="RIGHT"){
-            head = [head[0]-1,head[1]];
+            head = [head[0]+1,head[1]];
         }
         else if(direction==="LEFT"){
-            head = [head[0]+1,head[1]];
+            head = [head[0]-1,head[1]];
         }
         else if(direction==="DOWN"){
             head = [head[0],head[1]+1];
@@ -65,14 +89,16 @@ function Board() {
         updateWormBody(body);
     }
     const onGameOver = () =>{
-        alert("Game over!");
         //Set to initial state
         updateWormBody([
             [8,10],
             [9,10]
         ]);
         updateDirection("RIGHT");
+        dir = "RIGHT";
         updateHeart(randomHeartGenerator());
+        lose = true;
+        pauseGame()
     }
     const checkOutOfBounds = ()=>{
         let head = wormBody[wormBody.length-1];
@@ -97,12 +123,15 @@ function Board() {
             updateHeart(randomHeartGenerator());
         }
     }
+    
 //Sets interval
     useEffect(()=>{
         const mv = setInterval(moveWorm,speed);
         checkCollision();
         checkOutOfBounds();
         onEat();
+        const loseModal = document.getElementById("loseModal")
+        if(lose) loseModal.classList.add("active")
         return () => {
             window.clearInterval(mv);
           };
@@ -130,10 +159,28 @@ function Board() {
     })
     },[])
   return (
+    <>
     <div className="board">
         <Worm wormBody={wormBody}></Worm>
         <Heart heart={heart}></Heart>
     </div>
+    <div id="loseModal" className={`modal `}>
+        <div className="modal-header">Welcome to Happy Worm!</div>
+        <div className="modal-body">
+            <p>You get to play as Bartholomew, The Happy Worm! The consumption of the love is the only thing that makes him happy. The happier Bartholomew is, the longer he gets!</p>
+            <br></br>
+            <p>Enjoy your journey as a carefree worm, searching for happiness whilst unwittingly devoiding the world of love.</p> 
+            <br></br>
+            <p>Controls: WASD or Arrow Keys. Spacebar to Pause/Unpause</p> 
+        </div>
+        <button onClick={()=>{
+            const loseModal = document.getElementById("loseModal");
+            loseModal.classList.remove("active");
+            startGame();
+            lose = false;
+        }}className="close-button"></button>
+    </div>
+    </>
   )
 }
 

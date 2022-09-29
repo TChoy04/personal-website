@@ -9,6 +9,8 @@ function Modal() {
             <p>You get to play as Bartholomew, The Happy Worm! The consumption of the love is the only thing that makes him happy. The happier Bartholomew is, the longer he gets!</p>
             <br></br>
             <p>Enjoy your journey as a carefree worm, searching for happiness whilst unwittingly devoiding the world of love.</p> 
+            <br></br>
+            <p>Controls: WASD or Arrow Keys. Spacebar to Pause/Unpause</p> 
         </div>
         <button data-close-button className="close-button"></button>
     </div>
