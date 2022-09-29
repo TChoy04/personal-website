@@ -2,6 +2,7 @@ import Projects from "./Projects.js";
 import finx from "./images/finx.png";
 import isl from "./images/isl.png";
 import crypton from "./images/crypton.png"
+import worm from "./images/worm.png"
 const ProjectContainer = () => {
   return (
     <div className="project-container">
@@ -44,11 +45,11 @@ const ProjectContainer = () => {
       />
                 <Projects
         id="worm-image"
-        source={crypton}
-        name="Planet Crypton"
-        description="Planet Crypton: A side project I created in order to keep track of the ever volatile cryptocurrency market. It currently tracks the top 250 cryptocurrencies, ranked by their market cap."
-        description2="Planet Crypton updates real time with important information, such as a cryptocurrency's change over time, its highs and lows within 24 hours and a summary informing the user about the cryptocurrency, allowing the user to more confidently invest."
-        direction="row"
+        source={worm}
+        name="Happy Worm"
+        description="Happy Worm is a Snake styled game where you follow the adventure of the Happy Worm, Bartholomew and his journey to find true happiness."
+        description2="Unfortunately, the only thing that makes him happy is the consumption of love, and slowly but surely, Bartholomew is turning the world into a wasteland, deprived of love. (Not reflected in gameplay)"
+        direction="row-reverse"
         link="./worm"
         target=""
       />

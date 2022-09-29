@@ -30,7 +30,7 @@ function Board() {
     const [speed,updateSpeed] = useState(1000000)
     //Start the game || resume after a pause
     const startGame = () =>{
-        updateSpeed(150)
+        updateSpeed(100)
     }
     //Resume after a lost game to remove Modal
     //Pause the game
