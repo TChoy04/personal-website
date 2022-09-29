@@ -12,7 +12,9 @@
     
     border:1px solid #3d1f00
 }
-
+.board:first-child{
+  content:"H";
+}
 .heart {
     background-color: red;
     display: inline-block;

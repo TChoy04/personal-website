@@ -1,4 +1,5 @@
 
+import { render } from '@testing-library/react';
 import React,{useEffect, useState} from 'react'
 import "./Board.css"
 import Heart from "./Heart";
@@ -98,7 +99,7 @@ function Board() {
     }
 //Sets interval
     useEffect(()=>{
-        const mv = setInterval(moveWorm,100000000);
+        const mv = setInterval(moveWorm,speed);
         checkCollision();
         checkOutOfBounds();
         onEat();
@@ -111,7 +112,22 @@ function Board() {
         window.addEventListener("keydown",onKeyDown);
         const body = document.querySelector("body");
         body.style.overflow="hidden";
-
+        const closeModalButtons = document.querySelectorAll('[data-close-button]');
+        const overlay = document.getElementById("overlay");
+        const startModal = document.getElementById("startModal")
+        function openModal(modal){
+            modal.classList.add("active")
+            overlay.classList.add("active")
+        }
+        function closeStartModal(){
+            startModal.classList.remove("active")
+            overlay.classList.remove("active")
+            updateSpeed(200)
+       }
+        openModal(startModal)
+        closeModalButtons.forEach(close=>{
+        close.addEventListener("click",closeStartModal)
+    })
     },[])
   return (
     <div className="board">

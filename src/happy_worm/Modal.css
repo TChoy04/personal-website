@@ -9,6 +9,7 @@
     background-color: #efefef;
     width:500px;
     max-width:80%;
+    display:none;
 }
 .modal-header{
     padding:10px 15px;
@@ -77,5 +78,11 @@
     left:0;
     right:0;
     bottom:0;
+    display:none;
     background-color: rgba(0,0,0,0.5);
   }
+  #overlay.active,.modal.active{
+    display:block;
+    pointer-events: all;
+  }
+  
