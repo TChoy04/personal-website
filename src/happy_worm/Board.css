@@ -1,6 +1,6 @@
 .board{
     position:relative;
-    margin:50px auto;
+    margin:50px auto 0 auto;
     width:750px;
     height:750px;
     border:2px solid #79c5d6;
@@ -12,6 +12,7 @@
     
     border:1px solid #3d1f00
 }
+
 .heart {
     background-color: red;
     display: inline-block;

@@ -14,14 +14,17 @@ function randomHeartGenerator(){
 }
 
 
-
 function Board() {
     const [direction,updateDirection] = useState("RIGHT");
     const [heart,updateHeart] = useState(randomHeartGenerator());
     const [wormBody, updateWormBody] = useState([
         [8,10],
-        [9,10]
+        [9,10],
     ]);
+    const [speed,updateSpeed] = useState(1000000)
+    const startGame = () =>{
+        updateSpeed(200)
+    }
     const onKeyDown = (e) =>{
         //Change directions on keydown
         if(e.key==='ArrowLeft' || e.key === "d" || e.key === "D"){
@@ -74,10 +77,31 @@ function Board() {
         let head = wormBody[wormBody.length-1];
         if(head[0]>=20 || head[1]>=20 || head[0]<0 || head[1]<0) onGameOver();
     }
+    const checkCollision = () =>{
+        let body = wormBody;
+        let head = body[body.length-1];
+        for(let i = 0; i<body.length-1; i++){
+            if(body[i][0]==head[0] && body[i][1]==head[1]) onGameOver()
+        }
+        }
+    const grow = ()=>{
+        let newWorm = [...wormBody];
+        newWorm.unshift([]);
+        updateWormBody(newWorm)
+    }
+    const onEat = () =>{
+        let head = wormBody[wormBody.length-1];
+        if(head[0] == heart[0] && head[1]==heart[1]){
+            grow();
+            updateHeart(randomHeartGenerator());
+        }
+    }
 //Sets interval
     useEffect(()=>{
-        const mv = setInterval(moveWorm,200)
+        const mv = setInterval(moveWorm,100000000);
+        checkCollision();
         checkOutOfBounds();
+        onEat();
         return () => {
             window.clearInterval(mv);
           };
@@ -85,6 +109,9 @@ function Board() {
     });
     useEffect(()=>{
         window.addEventListener("keydown",onKeyDown);
+        const body = document.querySelector("body");
+        body.style.overflow="hidden";
+
     },[])
   return (
     <div className="board">

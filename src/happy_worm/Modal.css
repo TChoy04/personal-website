@@ -1,0 +1,81 @@
+.modal{
+    position:relative;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-220%);
+    border:1px solid black;
+    border-radius:10px;
+    z-index:10;
+    background-color: #efefef;
+    width:500px;
+    max-width:80%;
+}
+.modal-header{
+    padding:10px 15px;
+    border-bottom:1px solid black;
+    font-size:1.25rem;
+    font-weight:bold;
+}
+.close-button{
+    cursor:pointer;
+    display:grid;
+    margin:15px auto;
+    opacity: 1;
+    outline: 0;
+    color: #fff;
+    line-height: 40px;
+    position: relative;
+    text-align: center;
+    letter-spacing: 1px;
+    background-color:#efefef;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+.close-button:after{
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    color: black;
+    display: block;
+    transition: 500ms;
+    position: absolute;
+    background-color: #efefef;
+    content: "I'm ready!";
+    transform: translateY(-50%) rotateX(90deg);
+  }
+  .close-button:hover:after{
+    opacity: 1;
+    transform: translateY(0) rotateX(0);
+  }
+  
+  .close-button:hover:before{
+    opacity: 0;
+    transform: translateY(50%) rotateX(90deg);
+  }
+  .close-button:before{
+    top: 0;
+    left: 0;
+    opacity: 1;
+    color: #adadaf;
+    display: block;
+    padding: 0 30px;
+    line-height: 40px;
+    transition: 500ms;
+    position: relative;
+    background-color: #323237;
+    content: "Are you ready?";
+    transform: translateY(0) rotateX(0);
+  }
+  .modal-body{
+    padding:10px 15px;
+  }
+  #overlay{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: rgba(0,0,0,0.5);
+  }
