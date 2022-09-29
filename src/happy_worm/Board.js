@@ -157,7 +157,7 @@ function Board() {
         function closeStartModal(){
             startModal.classList.remove("active")
             overlay.classList.remove("active")
-            updateSpeed(200)
+            startGame()
        }
         openModal(startModal)
         closeModalButtons.forEach(close=>{
