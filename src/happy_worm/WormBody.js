@@ -1,7 +1,6 @@
 import React from 'react'
 //Size of squares.
 const multi = 5;
-//Copied from https://stackoverflow.com/questions/4959975/generate-random-number-between-two-numbers-in-javascript
 function getRandomColor(){
   return "hsla(" + ~~(360 * Math.random()) + "," +
                   "70%,"+
