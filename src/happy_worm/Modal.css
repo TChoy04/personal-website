@@ -72,7 +72,7 @@
     transform: translateY(0) rotateX(0);
   }
   .lose-button:before{
-    content:"Try again?"
+    content:"Try again..?"
   }
   .modal-body{
     padding:10px 15px;

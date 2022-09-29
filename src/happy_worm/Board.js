@@ -1,5 +1,4 @@
 
-
 import React,{useEffect, useState} from 'react'
 import "./Board.css"
 import Heart from "./Heart";
@@ -135,7 +134,11 @@ function Board() {
         checkOutOfBounds();
         onEat();
         const loseModal = document.getElementById("loseModal")
-        if(lose) loseModal.classList.add("active")
+        const overlay = document.getElementById("overlay")
+        if(lose){ 
+            loseModal.classList.add("active")
+            overlay.classList.add("active")
+    }
         return () => {
             window.clearInterval(mv);
           };
@@ -144,7 +147,6 @@ function Board() {
     useEffect(()=>{
         window.addEventListener("keydown",onKeyDown);
         const body = document.querySelector("body");
-        body.style.overflow="hidden";
         const closeModalButtons = document.querySelectorAll('[data-close-button]');
         const overlay = document.getElementById("overlay");
         const startModal = document.getElementById("startModal")
@@ -179,7 +181,9 @@ function Board() {
         </div>
         <button onClick={()=>{
             const loseModal = document.getElementById("loseModal");
+            const overlay = document.getElementById("overlay")
             loseModal.classList.remove("active");
+            overlay.classList.remove("active")
             startGame();
             lose = false;
         }}className="close-button lose-button"></button>

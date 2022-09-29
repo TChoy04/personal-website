@@ -39,3 +39,10 @@
   .coin-hover:hover:before {
     transform: scale(1);
   }
+  .navbar-links{
+    display:flex;
+
+  }
+  .navbar-links a{
+    margin-left:25px;
+  }

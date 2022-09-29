@@ -29,7 +29,7 @@ function App() {
     <Route path="*" element={<ErrorPage></ErrorPage>}></Route>
     <Route path='/crypton/coin' element={<CoinPage />}/>
     <Route path='/crypton/coin/:coinId' element={<CoinPage />} />
-    <Route path='/snake' element={<Worm></Worm>}></Route>
+    <Route path='/worm' element={<Worm></Worm>}></Route>
   </Routes>
 </Router>
   );
