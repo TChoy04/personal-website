@@ -5,7 +5,7 @@ const AboutMe = () => {
     <div className="aboutMe">
       <div className="description">
         <p>
-          My name is Tszfai and I am currently specializing in web based technologies like React.js and am excited to learn about fields outside of web development. I am seeking opportunities to further build upon my abilities and to expand my skill set. 
+          My name is Tszfai and I am currently majoring in Software Engineering at the Rochester Institute of Technology. I have a strong passion for web development, data structures, algorithms and problem solving and I'm always excited to learn more.
         </p>
         <p>
           If you would like to get in contact with me, you can do so via email
