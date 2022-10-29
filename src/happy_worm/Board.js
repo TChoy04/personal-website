@@ -41,24 +41,24 @@ function Board() {
     
     const onKeyDown = (e) =>{
         //Change directions on keydown
-        if((e.key==='ArrowLeft' || e.key === "a" || e.key === "A") && dir!="RIGHT"){
+        if((e.key==='ArrowLeft' || e.key === "a" || e.key === "A") && dir!=="RIGHT"){
             updateDirection("LEFT");
             dir = "LEFT"
         }
-        else if((e.key==='ArrowRight' || e.key === "d" || e.key === "D" ) && dir!="LEFT"){
+        else if((e.key==='ArrowRight' || e.key === "d" || e.key === "D" ) && dir!=="LEFT"){
             updateDirection("RIGHT");
             dir = "RIGHT"
         }
-        else if((e.key==='ArrowUp' || e.key === "w" || e.key === "W") && dir!="DOWN"){
+        else if((e.key==='ArrowUp' || e.key === "w" || e.key === "W") && dir!=="DOWN"){
             updateDirection("UP");
             dir = "UP"
         }
-        else if((e.key==='ArrowDown' || e.key === "s" || e.key === "S") && dir!="UP"){
+        else if((e.key==='ArrowDown' || e.key === "s" || e.key === "S") && dir!=="UP"){
             updateDirection("DOWN");
             dir = "DOWN"
         
         }
-        if(e.code=="Space"){
+        if(e.code==="Space"){
             if(paused){
                 startGame()
             } 
@@ -111,7 +111,7 @@ function Board() {
         let body = wormBody;
         let head = body[body.length-1];
         for(let i = 0; i<body.length-1; i++){
-            if(body[i][0]==head[0] && body[i][1]==head[1]) onGameOver()
+            if(body[i][0]===head[0] && body[i][1]===head[1]) onGameOver()
         }
         }
     const grow = ()=>{
@@ -121,7 +121,7 @@ function Board() {
     }
     const onEat = () =>{
         let head = wormBody[wormBody.length-1];
-        if(head[0] == heart[0] && head[1]==heart[1]){
+        if(head[0] === heart[0] && head[1]===heart[1]){
             grow();
             updateHeart(randomHeartGenerator());
         }
@@ -146,7 +146,6 @@ function Board() {
     });
     useEffect(()=>{
         window.addEventListener("keydown",onKeyDown);
-        const body = document.querySelector("body");
         const closeModalButtons = document.querySelectorAll('[data-close-button]');
         const overlay = document.getElementById("overlay");
         const startModal = document.getElementById("startModal")

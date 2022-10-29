@@ -18,7 +18,7 @@ function WormBody(props) {
                 top:`${body[1]*multi}%`,
                 background: `${color}`
             }
-            if(i==props.wormBody.length-1) return (<div className="worm-body worm-head" style={style} key ={i}
+            if(i===props.wormBody.length-1) return (<div className="worm-body worm-head" style={style} key ={i}
             ></div>)
             return(<div className="worm-body" style={style} key ={i}
             ></div>)
