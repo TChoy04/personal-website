@@ -1,3 +1,3 @@
 To-Do List:
-- Maybe try to incorporate SASS? Not really needed- 
+- Build with SASS
 - Convert JSX to TSX (TypeScript)
