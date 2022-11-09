@@ -1,3 +1,3 @@
 To-Do List:
-- Convert css to tailwind
+- Build with SASS
 - Convert JSX to TSX (TypeScript)
