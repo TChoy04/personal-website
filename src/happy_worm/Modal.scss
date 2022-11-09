@@ -1,0 +1,98 @@
+.modal{
+    position:relative;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-220%);
+    border:1px solid black;
+    border-radius:10px;
+    z-index:10;
+    background-color: #efefef;
+    width:500px;
+    max-width:80%;
+    display:none;
+}
+.modal-header{
+    padding:10px 15px;
+    border-bottom:1px solid black;
+    font-size:1.25rem;
+    font-weight:bold;
+    display:flex;
+    align-items: center;
+}
+.close-button{
+    cursor:pointer;
+    display:block;
+    margin:15px auto;
+    opacity: 1;
+    outline: 0;
+    color: #fff;
+    line-height: 40px;
+    position: relative;
+    text-align: center;
+    letter-spacing: 1px;
+    background-color:#efefef;
+    text-decoration: none;
+    text-transform: uppercase;
+    min-width:40%;
+  &:after{
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    color: black;
+    display: block;
+    transition: 500ms;
+    position: absolute;
+    background-color: #efefef;
+    content: "I'm ready!";
+    transform: translateY(-50%) rotateX(90deg);
+  }
+  &:hover{
+    &:after{
+      opacity: 1;
+      transform: translateY(0) rotateX(0);
+    }
+    &:before{
+      opacity: 0;
+      transform: translateY(50%) rotateX(90deg);
+    }
+  }
+  &:before{
+    top: 0;
+    left: 0;
+    opacity: 1;
+    color: #efefef;
+    display: block;
+    padding: 0 20px;
+    line-height: 40px;
+    transition: all 500ms;
+    position: relative;
+    background-color: #323237;
+    width:100%;
+    content: "Are you ready?";
+    transform: translateY(0) rotateX(0);
+  }
+}
+.lose-button{
+  min-width:30%;
+  &:before{
+    content:"Try again?"
+  }
+}
+  .modal-body{
+    padding:10px 15px;
+  }
+  #overlay{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    display:none;
+    background-color: rgba(0,0,0,0.5);
+  }
+  #overlay.active,.modal.active{
+    display:block;
+    pointer-events: all;
+  }
+  
