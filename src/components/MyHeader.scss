@@ -3,7 +3,6 @@
   width: 300px;
   max-width: 100%;
 }
-
 header {
   display: flex;
   flex-direction: column;
@@ -11,18 +10,17 @@ header {
   align-items: center;
   font-family: "Wire One", sans-serif;
 }
-
 .myInfo {
   display: flex;
   flex-direction: column;
   text-align: center;
+  &>h1,&>h3,&>.socials{
+    padding-block:0.25rem;
+  }
+  &>h1{
+    font-size:4.5rem;
+  }
+  &>h3{
+    font-size:2rem;
+  }
 }
-.myInfo > h1, .myInfo > h3, .myInfo > .socials {
-  padding-block: 0.25rem;
-}
-.myInfo > h1 {
-  font-size: 4.5rem;
-}
-.myInfo > h3 {
-  font-size: 2rem;
-}/*# sourceMappingURL=MyHeader.css.map */
