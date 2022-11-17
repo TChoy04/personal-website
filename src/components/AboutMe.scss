@@ -1,15 +1,15 @@
 .aboutMe {
   padding-block: 1rem;
+  & p{
+    font-size: 1.3rem;
+    font-family: "Raleway", "sans-serif";
+    margin-bottom: 8%;
+  
+  }
 }
-.aboutMe p {
-  font-size: 1.3rem;
-  font-family: "Raleway", "sans-serif";
-  margin-bottom: 8%;
-}
-
 .resume {
   font-weight: 800;
   color: #272626;
   font-size: 1.5rem;
   font-family: "Oswald", "sans-serif";
-}/*# sourceMappingURL=AboutMe.css.map */
+}
