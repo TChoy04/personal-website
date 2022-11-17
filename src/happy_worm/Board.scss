@@ -1,11 +1,12 @@
 $heart-red:#FF0000;
 $worm-border: #3d1f00;
 $board-border: #000000;
+$board-size: 750px;
 .board{
     position:relative;
     margin:50px auto 0 auto;
-    width:750px;
-    height:750px;
+    width:$board-size;
+    height:$board-size;
     border:2px solid $board-border;
 }
 .worm-body{
