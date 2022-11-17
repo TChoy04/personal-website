@@ -1,16 +1,18 @@
-.error{
-    height:100vh;
-    width:100vw;
+.error {
+  height: 100vh;
+  width: 100vw;
 }
-.error{
-    display:grid;
-    place-items:center;
+
+.error {
+  display: grid;
+  place-items: center;
 }
-.error-link{
-    font-size:2rem;
-    transition:all 0.5s;
-    text-decoration: underline;
+
+.error-link {
+  font-size: 2rem;
+  transition: all 0.5s;
+  text-decoration: underline;
 }
-.error-link:hover{
-    opacity:0.6;
-}
+.error-link:hover {
+  opacity: 0.6;
+}/*# sourceMappingURL=ErrorPage.css.map */

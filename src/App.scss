@@ -2,6 +2,7 @@ $primary-blue: #79c5d6;
 $primary-red: #ff3b3f;
 $bg-grey:#efefef;
 $text-grey:#696666;
+$selection-color:#9cedff77;
 * {
   margin: 0;
   padding: 0;
@@ -15,12 +16,12 @@ html {
   box-sizing: inherit;
 }
 *::-moz-selection {
-  background: #9cedff77;
+  background: $selection-color;
   color: $bg-grey;
 }
 
 *::selection {
-  background: #9cedff77;
+  background: $selection-color;
 }
 body {
   background: $bg-grey;
@@ -93,7 +94,7 @@ body {
   &:hover{
     color: $bg-grey;
     &:after{
-      background-color: #79c5df;
+      background-color: $primary-blue;
       height: 100%;
     }
   }

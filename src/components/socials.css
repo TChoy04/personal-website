@@ -7,9 +7,10 @@
   transform: scale(1.3);
   transition: 150ms;
 }
+
 .socials {
   display: flex;
   margin: 5%;
   align-items: center;
   justify-content: space-evenly;
-}
+}/*# sourceMappingURL=socials.css.map */
