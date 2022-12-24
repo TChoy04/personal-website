@@ -1,1 +1,1 @@
-{"version":3,"sources":["CoinBar.scss","CoinBar.css"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,mBAAA;EACA,kBAAA;ACCJ;ADAI;EACI,aAAA;EACA,iBAAA;EACA,YAAA;ACER","file":"CoinBar.css"}
+{"version":3,"sources":["CoinBar.scss","CoinBar.css"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,iBAAA;EACA,YAAA;ACCJ;;ADCA;EACI,aAAA;EACA,mBAAA;EACA,kBAAA;ACEJ","file":"CoinBar.css"}
