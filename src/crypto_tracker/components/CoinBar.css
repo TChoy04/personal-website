@@ -1,10 +1,10 @@
-.coin-imagetext img{
-    height:2.5em;
-    margin-right: 8px;
-    width:2.5em;
+.coin-imagetext {
+  display: flex;
+  align-items: center;
+  margin-left: -4rem;
 }
-.coin-imagetext{
-    display:flex;
-    align-items: center;
-    margin-left: -4rem;
-}
+.coin-imagetext img {
+  height: 2.5em;
+  margin-right: 8px;
+  width: 2.5em;
+}/*# sourceMappingURL=CoinBar.css.map */

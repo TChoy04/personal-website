@@ -1,0 +1,10 @@
+.coin-imagetext{
+    display:flex;
+    align-items: center;
+    margin-left: -4rem;
+    & img{
+        height: 2.5em;
+        margin-right: 8px;
+        width: 2.5em;
+    }
+}
