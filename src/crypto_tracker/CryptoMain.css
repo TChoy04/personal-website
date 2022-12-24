@@ -1,37 +1,41 @@
-.coin-row{
-    display:flex;
-    justify-content: space-between;
-    width:85%;
-    align-items: center;
-    background-color: #efefef;
-    box-shadow: 0px 0px 12px #18191b1a;
-    border-radius: 8px;
-    margin: 2rem auto;
-    padding: .7rem 1rem;
-    transition: all 0.4s ease;
+.coin-row {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  align-items: center;
+  background-color: #efefef;
+  box-shadow: 0px 0px 12px rgba(24, 25, 27, 0.1019607843);
+  border-radius: 8px;
+  margin: 2rem auto;
+  padding: 0.7rem 1rem;
+  transition: all 0.4s ease;
 }
-.coin-wrapper{
-    margin:auto;
+.coin-row * {
+  width: 14%;
 }
-.hover-effect:hover{
-    transform: scale(1.04);
-    box-shadow: 0px 0px 12px #18191b70;
-    cursor: pointer;
+
+.coin-wrapper {
+  margin: auto;
 }
-.coin-row *{
-width:14%;
+
+.hover-effect:hover {
+  transform: scale(1.04);
+  box-shadow: 0px 0px 12px rgba(24, 25, 27, 0.4392156863);
+  cursor: pointer;
 }
-.coin-logo{
-    text-align: center;
-    display:flex;
-    align-items: center;
-    justify-content: center;
+
+.coin-logo {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.coin-logo span{
-    margin-left:0.5rem;
+.coin-logo span {
+  margin-left: 0.5rem;
 }
+
 @media screen and (max-width: 720px) {
-    .hide-mobile {
-        display: none;
-    }
-}
+  .hide-mobile {
+    display: none;
+  }
+}/*# sourceMappingURL=CryptoMain.css.map */
