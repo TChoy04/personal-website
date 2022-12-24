@@ -3,23 +3,18 @@
   padding: 0;
   color: #696666;
 }
+*:before, *:after {
+  box-sizing: inherit;
+}
+*::-moz-selection {
+  background: rgba(156, 237, 255, 0.4666666667);
+}
+*::selection {
+  background: rgba(156, 237, 255, 0.4666666667);
+}
 
 html {
   box-sizing: border-box;
-}
-
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
-*::-moz-selection {
-  background: rgba(156, 237, 255, 0.4666666667);
-  color: #efefef;
-}
-
-*::selection {
-  background: rgba(156, 237, 255, 0.4666666667);
 }
 
 body {

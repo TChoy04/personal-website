@@ -6,22 +6,16 @@ $selection-color:#9cedff77;
 * {
   margin: 0;
   padding: 0;
-  color: $text-grey
+  color: $text-grey;
+  &:before, &:after{
+    box-sizing: inherit;
+  }
+  &::selection{
+    background:$selection-color;
+  }
 }
 html {
   box-sizing: border-box;
-}
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-*::-moz-selection {
-  background: $selection-color;
-  color: $bg-grey;
-}
-
-*::selection {
-  background: $selection-color;
 }
 body {
   background: $bg-grey;
@@ -133,9 +127,9 @@ body {
   }
   .myInfo {
     text-align: unset;
-  }
-  .myInfo > h1 {
-    letter-spacing: 0.35rem;
+    & > h1{
+      letter-spacing: 0.35rem;
+    }
   }
   #displayedImage {
     padding: 0 5%;
@@ -153,16 +147,16 @@ body {
   .row {
     display: flex;
     flex-direction: row;
-  }
-  .row > .project-image {
-    padding-left: 4%;
+    & > .project-image{
+      padding-left: 4%;
+    }
   }
   .row-reverse {
     display: flex;
     flex-direction: row-reverse;
-  }
-  .row-reverse > .project-image {
-    padding-right: 4%;
+    & > .project-image{
+      padding-right: 4%;
+    }
   }
   .project-image {
     max-width: 40% !important;
