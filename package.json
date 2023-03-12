@@ -49,6 +49,7 @@
   },
   "devDependencies": {
     "gh-pages": "^3.2.3",
-    "sass": "^1.56.0"
+    "sass": "^1.56.0",
+    "typescript": "^4.9.5"
   }
 }
