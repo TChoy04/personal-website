@@ -1,8 +1,9 @@
 import Projects from "./Projects.js";
 import finx from "./images/finx.png";
 import isl from "./images/isl.png";
-import crypton from "./images/crypton.png"
-import worm from "./images/worm.png"
+import crypton from "./images/crypton.png";
+import worm from "./images/worm.png";
+import tetris from "./images/tetris.png";
 const ProjectContainer = () => {
   return (
     <div className="project-container">
@@ -12,7 +13,16 @@ const ProjectContainer = () => {
           Showcase of websites I have worked on.
         </h4>
       </div>
-
+      <Projects
+        id="tetris-opener"
+        source={tetris}
+        name="Tetris Opener Bot"
+        description="Implemented image recognition to identify Tetris pieces and optimize placement strategies."
+        description2="Developed an algorithm capable of efficiently determining optimal placement for the first three bags, handling 128 billion possible configurations. Developed for Tetr.io"
+        direction="row-reverse"
+        link="https://github.com/TChoy04/tetris-opener-bot"
+        target="_blank"
+      />
       <Projects
         id="isl-image"
         source={isl}
@@ -33,7 +43,7 @@ const ProjectContainer = () => {
         link="https://twitter.com/finxeruntpolicy?lang=en"
         target="_blank"
       />
-          <Projects
+      <Projects
         id="crypton-image"
         source={crypton}
         name="Planet Crypton"
@@ -43,7 +53,7 @@ const ProjectContainer = () => {
         link="./crypton"
         target=""
       />
-                <Projects
+      <Projects
         id="worm-image"
         source={worm}
         name="Happy Worm"

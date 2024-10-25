@@ -2,14 +2,14 @@
   padding-top: 0.75rem;
   line-height: 1.2rem;
 }
-.experience-header{
-  padding-bottom:1rem;
+.experience-header {
+  padding-bottom: 1rem;
 }
 .experience-heading {
   font-style: italic;
   font-size: 2.5em;
   padding-bottom: 0.5rem;
-  text-align:center;
+  text-align: center;
 }
 .experience-title {
   font-size: 1.25rem;
@@ -25,13 +25,17 @@
   padding: 0.45rem 0;
 }
 .experience-heading-description {
-  text-align:center;
-  font-weight:bold;
+  text-align: center;
+  font-weight: bold;
 }
 
-@media (min-width: 1200px){
-  .flex-divider{
-    display:flex;
+@media (min-width: 1200px) {
+  .flex-divider {
+    display: flex;
     justify-content: space-around;
   }
+}
+.logo {
+  font-family: "Dancing Script", cursive;
+  color: #d2232a;
 }
