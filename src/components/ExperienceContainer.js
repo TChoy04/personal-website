@@ -11,38 +11,38 @@ const ExperienceContainer = () => {
       <div className="flex-divider">
         <div className="split-exp">
           <Experiences
+            title="Roblox"
+            role="Software Engineering Intern"
+            date="May 2025 - August 2025"
+          />
+          <Experiences
             title="Johnson & Johnson"
             role="Software Engineering Coop"
             date="June 2024 - December 2024"
           />
+        </div>
+        <div className="split-exp">
           <Experiences
             title="Rochester Insitute of Technology"
             role="Course Assistant"
             date="September 2023 - May 2024"
           />
-        </div>
-        <div className="split-exp">
           <Experiences
             title="International Socioeconomics Laboratory"
             role="Board of Directors - Web Development"
             date="January 2021 - February 2022"
           />
+        </div>
+        <div className="split-exp">
           <Experiences
             title="Finxerunt Policy Institute"
             role="Web Developer"
             date="June 2020 - January 2021"
           />
-        </div>
-        <div className="split-exp">
           <Experiences
             title="STEM from Scratch"
             role="Writer + Editor"
             date="March 2021 - March 2022"
-          />
-          <Experiences
-            title="Brooklyn Public Library"
-            role="Technical Support Internship"
-            date="September 2019 - May 2020"
           />
         </div>
       </div>
